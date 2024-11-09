@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../Style/App.css";
-import OrderApproved from "./OrderApproved";
+
+import axios from "axios";
+
+import { useHistory } from "react-router-dom";
 
 const boyutlar = ["Küçük", "Orta", "Büyük"]; // burası doğru yer
 const hamurlar = ["İnce", "Orta", "Kalın"];
@@ -74,8 +77,8 @@ function Form() {
       setForm({ ...form, [name]: value });
     }
   };
-
-  function handleClick(e) {
+  let history = useHistory(); // şükür oldu use history dışarda neden???
+  function handleClick(e, path) {
     const { name } = e.target;
 
     name === "siparis"
@@ -95,14 +98,38 @@ function Form() {
     //     : setError({ ...error, boyutHata: "" });
     // }, 1000);
 
-    //  ÇOK ÖĞRETİCİ
+    //  ÇOK ÖĞRETİCİ ASENKRON
 
-    console.log(error.boyutHata);
+    if (form.boyut && form.hamur) {
+      history.push(path, { form });
+    }
 
     if (name === "azalt" && form.adet > 1) {
       setForm({ ...form, adet: form.adet - 1 });
     } else if (name === "arttır" && form.adet < 10) {
       setForm({ ...form, adet: form.adet + 1 });
+    }
+
+    // POST İSTEĞİNİ İNCELE
+
+    if (form.boyut && form.hamur) {
+      axios
+        .post("https://reqres.in/api/pizza", form)
+        .then((response) => {
+          console.log("Sipariş Başarılı:", response.data);
+
+          // BURASI ÖNEMLİ FORMU SIFIR BIRAKACAKSIN HER SEFERINDE
+          setForm({
+            boyut: "",
+            hamur: "",
+            malzemeler: [],
+            siparisNotu: "",
+            adet: 1,
+          });
+        })
+        .catch((error) => {
+          console.error(error);
+        });
     }
   }
 
@@ -289,14 +316,15 @@ function Form() {
           <button
             name="siparis"
             className="width-div-22rem background-color-button text-align-c border-none border-radius-0-3rem min-height-div-2-5rem cursor"
-            onClick={handleClick}
+            onClick={(e) => handleClick(e, "/approved")}
+            // , () => handleSubmit("/approved")
             //onSubmit={handleSubmit}
+            //onSubmit={() => handleSubmit("/approved")}
           >
             Sipariş Ver
           </button>
         </div>
       </div>
-      {false && <OrderApproved abc={form}> </OrderApproved>}
     </div>
   );
 }

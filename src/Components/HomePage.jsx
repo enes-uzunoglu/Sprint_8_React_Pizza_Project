@@ -6,7 +6,9 @@ import Footer from "./Footer";
 import "../Style/UtilityClasses.css";
 import "../Style/Style.css";
 
-function HomePage() {
+function HomePage(props) {
+  const { isim } = props;
+  console.log(isim);
   return (
     <div className="flex column gap-m">
       <StartScreen></StartScreen>

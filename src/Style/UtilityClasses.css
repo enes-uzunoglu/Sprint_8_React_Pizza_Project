@@ -25,6 +25,7 @@
     flex-direction: column;
 }
 
+
 .positionStartCenter {
     align-items: center;
 }
@@ -100,4 +101,11 @@
 
 .justifyContent-e {
     justify-content: space-evenly;
+}
+
+
+
+
+.img {
+    max-width: 10rem;
 }

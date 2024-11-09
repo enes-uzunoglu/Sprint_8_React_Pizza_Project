@@ -248,9 +248,44 @@
 
 }
 
+
 .container7 {
     background-color: var(--headerColor);
+
+    color:white
 }
+
+
+.container7 > div:first-of-type > div:first-of-type{
+ padding: 1rem;
+}
+
+.container7 > div:first-of-type > div:first-of-type > h1 {
+
+    font-size: 3rem;
+}
+
+.container7 > div:first-of-type> div:first-of-type > p:first-of-type {
+    font-family: "Satisfy";
+    color: var(--buttonColor);
+    font-size: 2rem;
+}
+
+.container7 > div:first-of-type > div:first-of-type > p:nth-of-type(2) {
+    font-size: 3rem;
+}
+
+.container7 > div:first-of-type >  div:nth-last-of-type(2) > img {
+    
+    max-width: 20rem;
+}
+
+.container7 > div:first-of-type> div:nth-of-type(3)  {
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
 
 
 
