@@ -1,5 +1,6 @@
 import React from "react";
-import "./App.css";
+import "../Style/App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,16 +9,14 @@ function Header() {
         <h1 className="font-barlow fontsize-3rem ">Teknolojik Yemekler</h1>
 
         <nav>
-          <ul className="fontsize-header-ul display-flex gap-1rem list-style-type-none align-self-end">
+          <ul className="fontsize-1-5rem display-flex gap-1rem list-style-type-none align-self-end">
             <li>
-              <a className="text-decoration-none" href="">
+              <Link to="/" exact>
                 Anasayfa
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-decoration-none" href="">
-                Sipariş Oluştur
-              </a>
+              <Link to="/form">Sipariş Oluştur</Link>
             </li>
           </ul>
         </nav>

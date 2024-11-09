@@ -1,0 +1,103 @@
+/* WIDTH - HEIGTH  */
+
+.fullScreenBanner {
+    max-width: 100vw; /* buraya bi bak */
+    min-height: 100vh;
+}
+
+.fullScreenWidth {
+    max-width: 100vw;
+}
+
+
+/* MARGİN - PADDİNG */
+.deneme {
+    background-color: blue;
+}
+
+/* DİSPLAY FLEX */
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.positionStartCenter {
+    align-items: center;
+}
+
+.positionCenterStart {
+    justify-content: center;
+}
+
+.positionCenterCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+.positionCenterEnd {
+    justify-content: center;
+    align-items: end;
+}
+
+.positionEndCenter {
+    justify-content: end;
+    align-items: center;
+}
+
+.positionEnd-p {
+    justify-content: end;
+}
+
+.positionEnd-c {
+    align-items: end;
+}
+
+.positionEndEnd {
+    justify-content: end;
+    align-items: end;
+}
+
+.gap-xs {
+    gap: 0.5rem;
+}
+
+.gap-s {
+    gap: 1rem;
+}
+
+.gap-sm {
+    gap: 1.5rem;
+}
+
+.gap-m {
+    gap: 2rem;
+}
+
+.gap-ml {
+    gap: 2.5rem;
+}
+
+.gap-l {
+    gap: 3rem;
+}
+
+.gap-xl {
+    gap: 3.5rem;
+}
+
+
+.justifyContent-s {
+    justify-content: space-between;
+}
+
+.justifyContent-a {
+    justify-content: space-around;
+}
+
+.justifyContent-e {
+    justify-content: space-evenly;
+}

@@ -1,0 +1,258 @@
+.container1 {
+
+   
+    
+} 
+
+.container1 > div:first-of-type {
+    background-image: url("../imageFolder/home-banner.png");
+    background-position: center;
+    background-size: cover;
+
+    padding: 3rem;
+
+    
+    font-size: 3rem;
+    color: white;
+}
+
+.container1 > div:first-of-type  > P:first-of-type {
+
+    font-family: 'Satisfy';
+}
+    
+
+.container1 > div:first-of-type > button{
+    background-color: var(--buttonColor);
+    border: none;
+    border-radius: 1rem;
+    
+    cursor: pointer;
+    color: var(--footerColor);
+
+    
+}
+
+.container1 > div:nth-of-type(2) {
+    background-color: white;
+}
+/* */
+
+
+
+/**/
+
+.container2 {
+
+    background-color: white;
+
+}
+
+.container2 > ul:first-of-type {
+
+    width: 59.5rem;
+    
+    
+ 
+    height: 4.6rem;
+
+    list-style-type: none;
+    
+    padding: 0; 
+    margin: 0;
+
+    
+}
+
+.container2 > ul:first-of-type > button {
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: var(--buttonColor);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    cursor: pointer;
+
+    color: var(--footerColor);
+
+    font-weight: bold;
+    
+}
+
+.container2 > ul:first-of-type > li > a{    /* Link'ler css de a ile stillendiriliyor */
+    text-decoration: none;
+    color: black;
+    
+}
+
+/**/
+
+
+.container4 {
+
+}
+
+.container4 > div:first-of-type > div:first-of-type {
+    background-image: url("../imageFolder/kart-1.png");
+    background-position: center;
+    background-size: cover;
+
+    width: 29rem;
+    height: 23rem;
+
+    border-radius: 1rem;
+    color: white;
+    padding: 2rem;
+    
+    
+
+    button {
+        background-color: var(--buttonColor);
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem;
+
+        color: var(--footerColor);
+
+        font-weight: bold;
+    }
+}
+
+.container4 > div:first-of-type > div:nth-of-type(2) > div:first-of-type { 
+    background-image: url("../imageFolder/kart-2.png");
+    background-position: center;
+    background-size: cover;
+
+    width: 29rem;
+    height: 11rem;
+
+    border-radius: 1rem;
+    color: white;
+    padding: 2rem;
+
+    button {
+        background-color: var(--buttonColor);
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem;
+
+        color: var(--footerColor);
+
+        font-weight: bold;
+    }
+    
+}
+
+.container4 > div:first-of-type > div:nth-of-type(2) > div:nth-of-type(2) { 
+    background-image: url("../imageFolder/kart-3.png");
+    background-position: center;
+    background-size: cover;
+
+    width: 29rem;
+    height: 11rem;
+
+    border-radius: 1rem;
+    
+    padding: 2rem;
+
+    span{
+        color: var(--headerColor);
+    }
+
+    button {
+        background-color: var(--buttonColor);
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem;
+
+        color: var(--footerColor);
+
+        font-weight: bold;
+    }
+}
+
+/* */
+
+.container5 {
+    
+}
+
+.container5 > div:nth-child(1),
+.container5 > div:nth-child(2),
+.container5 > div:nth-child(3) {
+    background-color: white;
+
+    width: 18.5rem;
+
+    padding: 1rem;
+
+    border-radius: 1rem;
+}
+
+
+/* */
+
+.container6 {
+
+    background-color: var(--footerColor);
+    color: white;
+    padding: 2rem;
+}
+
+.container6 > div:first-child {   /* .container6:first-child bu olmadı !!!*/ 
+    max-width: 59.5rem;
+}
+
+.container6 > div:first-child > div:first-child > div {  /* çok iyi oldu bee maşallah */ 
+
+    min-width: 16.5rem;
+
+    display: flex;
+
+    gap: 0.5rem;
+
+}
+
+.container6 > div:first-child > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    gap: 0.5rem;
+}
+
+.container6 > div:first-child > div:nth-child(3) > ul {  /*   div child'ların 3.'sündeki ul'lerin hepsi */
+    
+    display: flex;
+    gap: 0.5rem;
+
+    min-width: 16.5rem;
+
+    list-style-type: none;
+    
+    padding: 0;
+    margin: 0;
+    
+}
+
+.container6 > div:last-child {   /* .container6:first-child bu olmadı !!!*/ 
+    width: 59.5rem;
+    padding: 0.5rem;
+    gap: 1rem;
+
+    display: flex;
+    justify-content: end;
+
+}
+
+.container7 {
+    background-color: var(--headerColor);
+}
+
+
+
+
+
